@@ -125,6 +125,8 @@ module.exports = class ServerlessResponse extends http.ServerResponse {
         if (typeof cb === 'function') {
           cb()
         }
+
+        return true;
       }
     })
   }
